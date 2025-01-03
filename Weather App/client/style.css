@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Matemasie&display=swap');
+body{
+    background-image: url(/images/7280763.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Matemasie", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: burlywood;
+    font-size: xx-large;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width:530px;
+    height:590px;
+    background-color: transparent;
+    background-image: url(/images/rain\ bg.jpg);
+    opacity: 0.8;
+    border: 3px solid black;
+    box-shadow: 10px 10px 5px  black;
+    position: relative;
+    left:33%;
+    font-size:large;
+}
+.search{
+    position: relative;
+    top:30px;
+}
+input{
+    width:220px;
+}
+button{
+    cursor: pointer;
+}
+.weather img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.weather p{
+    margin-bottom: 10px;
+}
+.weather h2{
+    display: block;
+    margin-bottom: 20px;
+}
+/* Media Query for smaller screens (Mobile Devices) */
+@media (max-width: 600px) {
+    body {
+        font-size: medium;
+    }
+
+    .container {
+        width: 90%; /* Take up most of the screen width */
+        height: auto; /* Allow the height to adjust based on content */
+        left: 5%; /* Center the container horizontally */
+    }
+    .search {
+        top: 10px;
+    }
+
+    input {
+        width: 80%; /* Make the input field take up more space */
+        font-size: large;
+    }
+
+    button {
+        width: 80%; /* Button also takes up more width */
+        font-size: large;
+    }
+    .weather {
+        width: 100%; /* Take up full width of the container */
+        padding: 10px;
+    }
+
+    .weather img {
+        width: 80px; /* Smaller image for mobile */
+        height: 80px;
+    }
+
+    .weather h2 {
+        font-size: 1.2em; /* Make the heading smaller */
+    }
+    .weather p {
+        font-size: 1em; /* Adjust text size for better readability */
+    }
+}
+
+/* Media Query for larger screens (Tablets, Laptops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%; /* Make the container wider */
+        height: auto;
+        left: 10%; /* Adjust the left margin */
+    }
+    .search {
+        top: 20px;
+    }
+
+    input {
+        width: 70%; /* Adjust input size */
+    }
+
+    button {
+        width: 70%;
+    }
+    .weather {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .weather img {
+        width: 90px; /* Slightly bigger image for tablets */
+        height: 90px;
+    }
+
+    .weather h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .weather p {
+        font-size: 1.2em; /* Adjust text size for readability */
+    }
+}
+/* Media Query for large screens (Desktop and larger devices) */
+@media (min-width: 1025px) {
+    .container {
+        width: 530px; /* Fixed container width */
+        left: 33%;
+    }
+
+    .search {
+        top: 30px;
+    }
+
+    input {
+        width: 220px;
+    }
+
+    button {
+        width: 220px;
+    }
+    .weather {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .weather img {
+        width: 100px; /* Regular image size for larger screens */
+        height: 100px;
+    }
+
+    .weather h2 {
+        font-size: 1.8em; /* Larger heading on bigger screens */
+    }
+    .weather p {
+        font-size: 1.5em; /* Adjust text size for better readability */
+    }
+}
